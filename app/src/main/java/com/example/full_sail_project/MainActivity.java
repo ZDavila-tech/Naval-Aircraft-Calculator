@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     TextView refuel;
     TextView travel;
     Spinner spinner;
+    static double answ;
 
 
     @Override
@@ -74,20 +75,25 @@ public class MainActivity extends AppCompatActivity {
         double c = 2 * Math.asin(Math.sqrt(a));
         double r = 6371;
 
-        double answ = c * r;
+         answ = c * r;
 
         distance.setText("You are "+ Double.toString(answ) + " kilometers away from your specified destination");
 
     }
     private void calTime(){
         double time = 0.0;
+        double speed = 0.0;
 
+        time = answ / speed;
         travel.setText("It will take " + Double.toString(time) + " hours to reach your specified destination");
 
 
     }
     private void calRefuel(){
-        int refueltime = 0 ;
-        refuel.setText("You will need to refuel: " + Integer.toString(refueltime) + " times");
+        double refueltime = 0 ;
+        double range = 0;
+        refueltime = answ / range;
+        refuel.setText("You will need to refuel: " + Double.toString(refueltime) + " times");
     }
+
 }
