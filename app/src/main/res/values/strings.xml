@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Naval Travel Calculator</string>
+    <string name="lat2">Latitude of End</string>
+    <string name="lat1">Latitude of Start</string>
+    <string name="long2">Longitude of End</string>
+    <string name="long1">Longitude of Start</string>
+    <string name="dist">Calculate Distance</string>
+    <string name="navy">Naval Travel Calculator</string>
+    <string name="neg">South or West equal Negative Numbers</string>
+    <string name="dir">Latitude is N/S, Longitude is W/E</string>
+    <string name="refuel">You will need to refuel: </string>
+    <string name="airplane">Select Plane Model: </string>
+    <string name="times">times</string>
+    <string-array name="aircraft">
+        <item>C</item>
+        <item>C++</item>
+        <item>Java</item>
+        <item>JavaScript</item>
+        <item>VisualBasic</item>
+    </string-array>
+</resources>
