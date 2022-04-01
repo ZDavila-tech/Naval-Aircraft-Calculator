@@ -267,11 +267,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     }
     private void calTime(){
         time = answ / speed;
-        travel.setText("It will take " + Double.toString(time) + " hours to reach your specified destination");
+        travel.setText("It will take " + Double.toString(time) + " hours to reach your specified destination at maximum speed");
     }
     private void calRefuel(){
         refueltime = answ / range;
-        refuel.setText("You will need to refuel: " + Double.toString(refueltime) + " times");
+        refuel.setText("You will need to refuel: " + Double.toString(refueltime) + " times at maximum speed");
     }
 
 }
