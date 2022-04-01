@@ -49,6 +49,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 calDistance();
                 calRefuel();
                 calTime();
+
             }
         });
 
