@@ -1,7 +1,6 @@
 package com.example.full_sail_project;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,11 +9,9 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-
 import java.lang.reflect.Array;
 
-
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
     Button button;
     EditText inputlat1;
@@ -25,8 +22,7 @@ public class MainActivity extends AppCompatActivity {
     TextView refuel;
     TextView travel;
     Spinner spinner;
-    static double answ;
-
+    static double answ, time, speed, refueltime,range;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<CharSequence>adapter = ArrayAdapter.createFromResource(this, R.array.aircraft, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
+        spinner.setOnItemSelectedListener(this);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -54,6 +51,196 @@ public class MainActivity extends AppCompatActivity {
                 calTime();
             }
         });
+
+    }
+
+    @Override
+    public void onItemSelected(AdapterView<?> parent, View v, int position, long id){
+        switch(position){
+            case 0:
+                break;
+            case 1:
+                speed = ;
+                range = ;
+                break;
+            case 2:
+                speed = ;
+                range = ;
+                break;
+            case 3:
+                speed = ;
+                range = ;
+                break;
+            case 4:
+                speed = ;
+                range = ;
+                break;
+            case 5:
+                speed = ;
+                range = ;
+                break;
+            case 6:
+                speed = ;
+                range = ;
+                break;
+            case 7:
+                speed = ;
+                range = ;
+                break;
+            case 8:
+                speed = ;
+                range = ;
+                break;
+            case 9:
+                speed = ;
+                range = ;
+                break;
+            case 10:
+                speed = ;
+                range = ;
+                break;
+            case 11:
+                speed = ;
+                range = ;
+                break;
+            case 12:
+                speed = ;
+                range = ;
+                break;
+            case 13:
+                speed = ;
+                range = ;
+                break;
+            case 14:
+                speed = ;
+                range = ;
+                break;
+            case 15:
+                speed = ;
+                range = ;
+                break;
+            case 16:
+                speed = ;
+                range = ;
+                break;
+            case 17:
+                speed = ;
+                range = ;
+                break;
+            case 18:
+                speed = ;
+                range = ;
+                break;
+            case 19:
+                speed = ;
+                range = ;
+                break;
+            case 20:
+                speed = ;
+                range = ;
+                break;
+            case 21:
+                speed = ;
+                range = ;
+                break;
+            case 22:
+                speed = ;
+                range = ;
+                break;
+            case 23:
+                speed = ;
+                range = ;
+                break;
+            case 24:
+                speed = ;
+                range = ;
+                break;
+            case 25:
+                speed = ;
+                range = ;
+                break;
+            case 26:
+                speed = ;
+                range = ;
+                break;
+            case 27:
+                speed = ;
+                range = ;
+                break;
+            case 28:
+                speed = ;
+                range = ;
+                break;
+            case 29:
+                speed = ;
+                range = ;
+                break;
+            case 30:
+                speed = ;
+                range = ;
+                break;
+            case 31:
+                speed = ;
+                range = ;
+                break;
+            case 32:
+                speed = ;
+                range = ;
+                break;
+            case 33:
+                speed = ;
+                range = ;
+                break;
+            case 34:
+                speed = ;
+                range = ;
+                break;
+            case 35:
+                speed = ;
+                range = ;
+                break;
+            case 36:
+                speed = ;
+                range = ;
+                break;
+            case 37:
+                speed = ;
+                range = ;
+                break;
+            case 38:
+                speed = ;
+                range = ;
+                break;
+            case 39:
+                speed = ;
+                range = ;
+                break;
+            case 40:
+                speed = ;
+                range = ;
+                break;
+            case 41:
+                speed = ;
+                range = ;
+                break;
+            case 42:
+                speed = ;
+                range = ;
+                break;
+            case 43:
+                speed = ;
+                range = ;
+                break;
+            case 44:
+                speed = ;
+                range = ;
+                break;
+
+        }
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> parent) {
 
     }
 
@@ -74,24 +261,15 @@ public class MainActivity extends AppCompatActivity {
                 * Math.pow(Math.sin(dlon / 2), 2);
         double c = 2 * Math.asin(Math.sqrt(a));
         double r = 6371;
-
          answ = c * r;
-
         distance.setText("You are "+ Double.toString(answ) + " kilometers away from your specified destination");
 
     }
     private void calTime(){
-        double time = 0.0;
-        double speed = 0.0;
-
         time = answ / speed;
         travel.setText("It will take " + Double.toString(time) + " hours to reach your specified destination");
-
-
     }
     private void calRefuel(){
-        double refueltime = 0 ;
-        double range = 0;
         refueltime = answ / range;
         refuel.setText("You will need to refuel: " + Double.toString(refueltime) + " times");
     }

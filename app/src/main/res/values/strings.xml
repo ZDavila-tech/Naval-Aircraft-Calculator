@@ -12,10 +12,49 @@
     <string name="airplane">Select Plane Model:  </string>
     <string name="times">times</string>
     <string-array name="aircraft">
-        <item>C</item>
-        <item>C++</item>
-        <item>Java</item>
-        <item>JavaScript</item>
-        <item>VisualBasic</item>
+        <item>Select Model</item>
+        <item>Airbus Helicopters H145 (EC145)</item>
+        <item>Airbus Helicopters UH-72 Lakota</item>
+        <item>Beechcraft/Raytheon T-6 Texan II</item>
+        <item>Beechcraft C-12 Huron</item>
+        <item>Beechcraft King Air</item>
+        <item>Beechcraft T-34 Mentor</item>
+        <item>Bell Boeing CMV-22B Osprey</item>
+        <item>Bell Boeing V-22 Osprey</item>
+        <item>Bell Model 206 (Jet Ranger / LongRanger)</item>
+        <item>Bell OH-58 Kiowa</item>
+        <item>Boeing (McDonnell Douglas) F/A-18 Hornet</item>
+        <item>Boeing (McDonnell Douglas) T-45 Goshawk</item>
+        <item>Boeing 707</item>
+        <item>Boeing 737 (Series)</item>
+        <item>Boeing E-6 Mercury</item>
+        <item>Boeing EA-18G Growler</item>
+        <item>Boeing F/A-18 Super Hornet</item>
+        <item>Boeing P-8 Poseidon</item>
+        <item>de Havilland Canada DHC-2 Beaver</item>
+        <item>de Havilland Canada DHC-3 Otter</item>
+        <item>Fokker F27 Friendship</item>
+        <item>Grumman C-2 Greyhound</item>
+        <item>Gulfstream C-20</item>
+        <item>Gulfstream G500</item>
+        <item>IAI RQ-2 Pioneer</item>
+        <item>Leonardo AW119 (Koala)</item>
+        <item>Leonardo TH-73 AHTS (Advanced Helicopter Training System)</item>
+        <item>Lockheed C-130 Hercules</item>
+        <item>Lockheed Martin F-16 Fighting Falcon</item>
+        <item>Lockheed Martin F-35 Lightning II</item>
+        <item>Lockheed Martin P-3 Orion</item>
+        <item>Northrop F-5 Freedom Fighter/Tiger/Tiger II</item>
+        <item>Northrop Grumman/Bell MQ-8 (Fire-X)</item>
+        <item>Northrop Grumman E-2 Hawkeye</item>
+        <item>Northrop Grumman E-2D Hawkeye</item>
+        <item>Northrop Grumman MQ-4 Triton</item>
+        <item>Northrop Grumman MQ-8 Fire Scout</item>
+        <item>Northrop T-38 Talon</item>
+        <item>Sikorsky CH-53E Super Stallion</item>
+        <item>Sikorsky HH-60/MH-60T Jayhawk</item>
+        <item>Sikorsky MH-60 (Knighthawk)</item>
+        <item>Sikorsky SH-60 Seahawk</item>
+        <item>Sikorsky UH-60 Black Hawk</item>
     </string-array>
 </resources>
