@@ -6,8 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.SpinnerAdapter;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+
+import java.lang.reflect.Array;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     TextView distance;
     TextView refuel;
     TextView travel;
+    Spinner spinner;
 
 
     @Override
@@ -34,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
         distance = findViewById(R.id.distance);
         refuel = findViewById(R.id.refuel);
         travel = findViewById(R.id.travel);
+        spinner = findViewById(R.id.spinner_aircraft);
+        ArrayAdapter<CharSequence>adapter = ArrayAdapter.createFromResource(this, R.array.aircraft, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
+        spinner.setAdapter(adapter);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

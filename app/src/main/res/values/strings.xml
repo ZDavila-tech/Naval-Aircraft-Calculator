@@ -9,7 +9,7 @@
     <string name="neg">South or West equal Negative Numbers</string>
     <string name="dir">Latitude is N/S, Longitude is W/E</string>
     <string name="refuel">You will need to refuel: </string>
-    <string name="airplane">Select Plane Model: </string>
+    <string name="airplane">Select Plane Model:  </string>
     <string name="times">times</string>
     <string-array name="aircraft">
         <item>C</item>
