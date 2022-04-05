@@ -61,182 +61,177 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             case 0:
                 break;
             case 1:
-                speed = ;
-                range = ;
+                speed = 132;
+                range = 1259;
                 break;
             case 2:
-                speed = ;
-                range = ;
+                speed = 145;
+                range = 1269;
                 break;
             case 3:
-                speed = ;
-                range = ;
+                speed = 278;
+                range = 2917;
                 break;
             case 4:
-                speed = ;
-                range = ;
+                speed = 289;
+                range = 6186;
                 break;
             case 5:
-                speed = ;
-                range = ;
+                speed = 270;
+                range = 4530;
                 break;
             case 6:
-                speed = ;
-                range = ;
+                speed = 280;
+                range = 2428;
                 break;
             case 7:
-                speed = ;
-                range = ;
+                speed = 275;
+                range = 6667;
                 break;
             case 8:
-                speed = ;
-                range = ;
+                speed = 275;
+                range = 3013;
                 break;
             case 9:
-                speed = ;
-                range = ;
+                speed = 106;
+                range = 889;
                 break;
             case 10:
-                speed = ;
-                range = ;
+                speed = 114;
+                range = 765;
                 break;
             case 11:
-                speed = ;
-                range = ;
+                speed = 1034;
+                range = 3704;
                 break;
             case 12:
-                speed = ;
-                range = ;
+                speed = 560;
+                range = 2385;
                 break;
             case 13:
-                speed = ;
-                range = ;
+                speed = 478;
+                range = 12816;
                 break;
             case 14:
-                speed = ;
-                range = ;
+                speed = 473;
+                range = 7749;
                 break;
             case 15:
-                speed = ;
-                range = ;
+                speed = 524;
+                range = 22409;
                 break;
             case 16:
-                speed = ;
-                range = ;
+                speed = 1026;
+                range = 4345;
                 break;
             case 17:
-                speed = ;
-                range = ;
+                speed = 1032;
+                range = 2028;
                 break;
             case 18:
-                speed = ;
-                range = ;
+                speed = 426;
+                range = 4115;
                 break;
             case 19:
-                speed = ;
-                range = ;
+                speed = 138;
+                range = 1356;
                 break;
             case 20:
-                speed = ;
-                range = ;
+                speed = 139;
+                range = 2815;
                 break;
             case 21:
-                speed = ;
-                range = ;
+                speed = 248;
+                range = 4815;
                 break;
             case 22:
-                speed = ;
-                range = ;
+                speed = 288;
+                range = 4445;
                 break;
             case 23:
-                speed = ;
-                range = ;
+                speed = 505;
+                range = 12742;
                 break;
             case 24:
-                speed = ;
-                range = ;
+                speed = 508;
+                range = 23150;
                 break;
             case 25:
-                speed = ;
-                range = ;
+                speed = 108;
+                range = 343;
                 break;
             case 26:
-                speed = ;
-                range = ;
+                speed = 154;
+                range = 1769;
                 break;
             case 27:
-                speed = ;
-                range = ;
+                speed = 152;
+                range = 1565;
                 break;
             case 28:
-                speed = ;
-                range = ;
+                speed = 324;
+                range = 6667;
                 break;
             case 29:
-                speed = ;
-                range = ;
+                speed = 1145;
+                range = 7815;
                 break;
             case 30:
-                speed = ;
-                range = ;
+                speed = 1042;
+                range = 4111;
                 break;
             case 31:
-                speed = ;
-                range = ;
+                speed = 405;
+                range = 16668;
                 break;
             case 32:
-                speed = ;
-                range = ;
+                speed = 936;
+                range = 4599;
                 break;
             case 33:
-                speed = ;
-                range = ;
+                speed = 140;
+                range = 1111;
                 break;
             case 34:
-                speed = ;
-                range = ;
+                speed = 326;
+                range = 4784;
                 break;
             case 35:
-                speed = ;
-                range = ;
+                speed = 351;
+                range = 5019;
                 break;
             case 36:
-                speed = ;
-                range = ;
+                speed = 310;
+                range = 28123;
                 break;
             case 37:
-                speed = ;
-                range = ;
+                speed = 115;
+                range = 2778;
                 break;
             case 38:
-                speed = ;
-                range = ;
+                speed = 745;
+                range = 3398;
                 break;
             case 39:
-                speed = ;
-                range = ;
+                speed = 170;
+                range = 3843;
                 break;
             case 40:
-                speed = ;
-                range = ;
+                speed = 180;
+                range = 2408;
                 break;
             case 41:
-                speed = ;
-                range = ;
+                speed = 180;
+                range = 4111;
                 break;
             case 42:
-                speed = ;
-                range = ;
+                speed = 178;
+                range = 1304;
                 break;
             case 43:
-                speed = ;
-                range = ;
+                speed = 159;
+                range = 1082;
                 break;
-            case 44:
-                speed = ;
-                range = ;
-                break;
-
         }
     }
 
