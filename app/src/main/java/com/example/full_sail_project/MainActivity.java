@@ -9,7 +9,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import java.lang.reflect.Array;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
@@ -22,11 +21,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     TextView refuel;
     TextView travel;
     Spinner spinner;
-    static double answ;
-    static double time;
-    static double speed;
-    static double refueltime;
-    static double range;
+    double answ;
+    double time;
+    double speed;
+    double refueltime;
+    double range;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,27 +33,24 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
 
         button = (Button) findViewById(R.id.button);
-        inputlat1 = findViewById(R.id.lat1);
-        inputlat2 = findViewById(R.id.lat2);
-        inputlong1 = findViewById(R.id.long1);
-        inputlong2 = findViewById(R.id.long2);
-        distance = findViewById(R.id.distance);
-        refuel = findViewById(R.id.refuel);
-        travel = findViewById(R.id.travel);
-        spinner = findViewById(R.id.spinner_aircraft);
+        inputlat1 = (EditText) findViewById(R.id.lat1);
+        inputlat2 = (EditText) findViewById(R.id.lat2);
+        inputlong1 = (EditText) findViewById(R.id.long1);
+        inputlong2 = (EditText) findViewById(R.id.long2);
+        distance = (TextView) findViewById(R.id.distance);
+        refuel = (TextView) findViewById(R.id.refuel);
+        travel = (TextView) findViewById(R.id.travel);
+        spinner = (Spinner) findViewById(R.id.spinner_aircraft);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.aircraft, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                calDistance();
-                calRefuel();
-                calTime();
+        button.setOnClickListener(v -> {
+            calDistance();
+            calTime();
+            calRefuel();
 
-            }
         });
 
     }
@@ -63,6 +59,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     public void onItemSelected(AdapterView<?> parent, View v, int position, long id){
         switch(position){
             case 0:
+                speed =0;
+                range = 0;
                 break;
             case 1:
                 speed = 132.0;
@@ -244,7 +242,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
-    public void calDistance(){
+    private void calDistance(){
         double conlat1 = Double.parseDouble(inputlat1.getText().toString());
         double conlat2 = Double.parseDouble(inputlat2.getText().toString());
         double conlong1 = Double.parseDouble(inputlong1.getText().toString());
@@ -266,14 +264,14 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         distance.setText(result);
 
     }
-    public void calTime(){
+    private void calTime(){
         time = answ / speed;
         String first = "It will take " + time + " hours at maximum speed";
         travel.setText(first);
     }
-    public void calRefuel(){
+    private void calRefuel(){
         refueltime = answ / range;
-        String result = "You will need to refuel: " + refueltime + " times at maximum speed";
+        String result = "You will need to refuel " + refueltime + " times at maximum speed";
         refuel.setText(result);
     }
 
