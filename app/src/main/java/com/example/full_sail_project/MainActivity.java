@@ -11,7 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
-
+//variables used in project
     Button button;
     EditText inputlat1;
     EditText inputlat2;
@@ -41,11 +41,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         refuel = (TextView) findViewById(R.id.refuel);
         travel = (TextView) findViewById(R.id.travel);
         spinner = (Spinner) findViewById(R.id.spinner_aircraft);
+        //set Spinner to Appear like a drop-down menu
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.aircraft, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
-
+//when you click the button: the distance, travel time, and number of refuels will appear
         button.setOnClickListener(v -> {
             calDistance();
             calTime();
@@ -54,13 +55,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         });
 
     }
-
+//depending on which aircraft is chosen will determine the values for the speed and range
     @Override
     public void onItemSelected(AdapterView<?> parent, View v, int position, long id){
         switch(position){
             case 0:
-                speed =0;
-                range = 0;
+
                 break;
             case 1:
                 speed = 132.0;
@@ -260,18 +260,18 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         double c = 2 * Math.asin(Math.sqrt(a));
         double r = 6371;
          answ = c * r * 0.868976;
-         String result = "You are "+ answ + " nautical miles away from your specified destination";
+         String result = "You are "+ String.format("%.2f", answ) + " nautical miles away from your specified destination";
         distance.setText(result);
 
     }
     private void calTime(){
         time = answ / speed;
-        String first = "It will take " + time + " hours at maximum speed";
+        String first = "It will take " + String.format("%.2f", time) + " hours at maximum speed";
         travel.setText(first);
     }
     private void calRefuel(){
         refueltime = answ / range;
-        String result = "You will need to refuel " + refueltime + " times at maximum speed";
+        String result = "You will need to refuel " + String.format("%.2f", refueltime) + " times at maximum speed";
         refuel.setText(result);
     }
 
