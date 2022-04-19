@@ -259,7 +259,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 * Math.pow(Math.sin(dlon / 2), 2);
         double c = 2 * Math.asin(Math.sqrt(a));
         double r = 6371;
-         answ = c * r * 0.868976;
+         answ = c * r / 1.852;
          String result = "You are "+ String.format("%.2f", answ) + " nautical miles away from your specified destination";
         distance.setText(result);
 

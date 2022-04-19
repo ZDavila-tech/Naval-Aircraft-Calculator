@@ -1,0 +1,12 @@
+		~About Naval Travel Calculator~
+The Navy Travel Calculator is used to determine the distance, 
+how long it will take, and the number of times the aircraft needs 
+to be refueled between two locations that the Navy aircraft will need to travel.
+The basis of this project came from an idea I had to make travel easier for the Navy
+pilots who had travel between Navy bases to transport supplies. First, I began to 
+research how many aircraft models the Navy has currently. I found a list 
+from Military.com of the Naval aircraft active in use. Along with the name 
+of the aircraft, the list also contained information on the maximum speed and range 
+of the aircraft. The link to the list of Active US Navy Aircraft is down below:
+
+https://www.militaryfactory.com/modern-airpower/aircraft-united-states-navy.php

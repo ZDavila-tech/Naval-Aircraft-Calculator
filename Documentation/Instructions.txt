@@ -1,0 +1,19 @@
+		~How to Use the App~
+1. Once you start running the Navy Travel Calculator in Android Studio, 
+   select an aircraft model from the drop-down menu.
+2. Insert the coordinates, Latitude and Longitude, of the Start Location.
+3. Insert the coordinates, Latitude and Longitude, of the End Location.
+4. After all the information is inserted, press the Calculate Button.
+   Then, the distance, travel time, and the number of refuel times will appear
+   at the bottom of the screen. If you, cannot see the refuel section,
+   the screen is scrollable.
+
+Ex. Coordinates
+
+Kingsville,TX
+27.5159 N, 97.8561 W
+
+Kyiv (Capital of Ukraine)
+50.4501 N, 30.5234 E
+
+Distance 5380.7 nautical miles
