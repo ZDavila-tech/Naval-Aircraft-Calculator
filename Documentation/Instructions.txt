@@ -1,9 +1,12 @@
 		~How to Use the App~
-1. Once you start running the Navy Travel Calculator in Android Studio, 
-   select an aircraft model from the drop-down menu.
-2. Insert the coordinates, Latitude and Longitude, of the Start Location.
-3. Insert the coordinates, Latitude and Longitude, of the End Location.
-4. After all the information is inserted, press the Calculate Button.
+1. Download the code from Github Studio to your computer. Once you have downloaded the project, open Android Studio.
+   When you have Android Studio open, go to the File tab and click on Open. This will direct you to your files. Find 
+   and choose the Full_Sail_Project from the location you downloaded it. 
+2. Once you start running the Navy Travel Calculator in Android Studio, 
+   select an aircraft model from the drop-down menu. 
+3. Insert the coordinates, Latitude and Longitude, of the Start Location.
+4. Insert the coordinates, Latitude and Longitude, of the End Location.
+5. After all the information is inserted, press the Calculate Button.
    Then, the distance, travel time, and the number of refuel times will appear
    at the bottom of the screen. If you, cannot see the refuel section,
    the screen is scrollable.
