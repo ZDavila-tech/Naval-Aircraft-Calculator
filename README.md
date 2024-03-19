@@ -1,6 +1,6 @@
 # Naval Aircraft Calculator
-Android Application to calculate specific measurements for the various aircrfat used in the Navy. 
-------------------------------------------------------------
+Android Application to calculate specific measurements for the various aircraft used in the Navy. 
+
 Built with Android Studio.
 
 ## Features
